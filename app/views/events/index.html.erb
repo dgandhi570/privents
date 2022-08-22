@@ -1,0 +1,9 @@
+<h1>PRI.VENTS</h1>
+<% @events.each do |event| %>
+<br>
+<%=link_to event.eventname , event  %>
+<%= event.date %>
+<%end%>
+<br>
+<br>
+<%= button_to "Add New Event", new_event_path, method: :get%>
