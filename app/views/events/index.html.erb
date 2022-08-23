@@ -1,8 +1,10 @@
-<h1>PRI.VENTS</h1>
+<h1>Upcoming Events :) </h1>
 <% @events.each do |event| %>
 <br>
 <%=link_to event.eventname , event  %>
 <%= event.date %>
+<p> Creator: <%= event.creator.name%> </p>
+    
 <%end%>
 <br>
 <br>
